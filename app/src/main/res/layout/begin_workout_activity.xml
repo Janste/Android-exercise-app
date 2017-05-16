@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="38dp"
+        android:text="@string/title_text"
+        android:id="@+id/start_workout_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/begin_training_button_bg"
+        android:textColor="@color/begin_training_text_color"
+        android:text="@string/start_training_text"
+        android:id="@+id/begin_training_button"
+        android:layout_below="@+id/start_workout_title"
+        android:layout_centerHorizontal="true"
+        android:onClick="beginTrainingButtonAction" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:text="@string/workout"
+        android:textSize="20sp"
+        android:id="@+id/workout_text_view"
+        android:layout_below="@+id/begin_training_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:id="@+id/chosen_workout_name_text_view"
+        android:layout_above="@+id/choose_workout_button"
+        android:layout_toRightOf="@+id/workout_text_view"
+        android:layout_toEndOf="@+id/workout_text_view"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/choose_another_workout"
+        android:background="@drawable/begin_workout_normal_button_bg"
+        android:textColor="@color/white"
+        android:id="@+id/choose_workout_button"
+        android:layout_below="@+id/workout_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="chooseWorkoutActivityButtonAction" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="@string/difficulty_level"
+        android:id="@+id/difficulty_level_text_view"
+        android:layout_below="@+id/choose_workout_button"
+        android:layout_alignLeft="@+id/choose_workout_button"
+        android:layout_alignStart="@+id/choose_workout_button"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/chosen_difficulty_level_text_view"
+        android:layout_alignBottom="@+id/difficulty_level_text_view"
+        android:layout_toRightOf="@+id/difficulty_level_text_view"
+        android:layout_toEndOf="@+id/difficulty_level_text_view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_another_difficulty"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/begin_workout_normal_button_bg"
+        android:textColor="@color/white"
+        android:id="@+id/choose_difficulty_button"
+        android:layout_below="@+id/difficulty_level_text_view"
+        android:layout_alignLeft="@+id/difficulty_level_text_view"
+        android:layout_alignStart="@+id/difficulty_level_text_view"
+        android:layout_alignRight="@+id/choose_workout_button"
+        android:layout_alignEnd="@+id/choose_workout_button"
+        android:onClick="chooseDifficultyActivityButtonAction" />
+
+
+</RelativeLayout>

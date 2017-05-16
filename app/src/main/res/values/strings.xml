@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Bodyweight Workout</string>
+
+    <!-- main_activity -->
+    <string name="start_workout_button_text">START WORKOUT</string>
+    <string name="workouts_button_text">WORKOUTS LIST</string>
+    <string name="achievments_button_text">ACHIEVMENTS</string>
+    <string name="stats_button_text">STATS</string>
+    <string name="settings_button_text">SETTINGS</string>
+    <string name="about_button_text">ABOUT</string>
+
+    <!-- begin_workout_activity -->
+    <string name="title_text">Ready to workout?</string>
+    <string name="start_training_text">BEGIN TRAINING</string>
+    <string name="workout">Workout:</string>
+    <string name="difficulty_level">Difficulty:</string>
+    <string name="choose_another_workout">Choose another workout</string>
+    <string name="choose_another_difficulty">Choose another difficulty</string>
+
+    <!-- workouts_list_view_item -->
+    <string name="details">Details</string>
+    <string name="select">Select</string>
+
+    <!-- workouts_details_activity -->
+    <string name="exercise_list">Exercise list</string>
+
+    <!-- exercise_details_activity -->
+    <string name="muscles_involved">Muscles:</string>
+
+    <!-- choose_workout_difficulty_activity -->
+    <string name="choose_difficulty_level">Choose difficulty level:</string>
+    <string name="exercise_time">Exercise time:</string>
+    <string name="break_time">Break time:</string>
+    <string name="exercises_per_round">Exercises per round:</string>
+    <string name="rounds">Rounds:</string>
+    <string name="total_time">Total time:</string>
+    <string name="seconds">seconds</string>
+    <string name="minutes">minutes</string>
+
+    <!-- do_workout_activity -->
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="cancel">Cancel</string>
+    <string name="exercise_capitalized">EXERCISE</string>
+    <string name="rest">Rest</string>
+    <string name="prepare_for_workout">Prepare for workout</string>
+    <string name="next_exercise">Next exercise</string>
+    <string name="workout_finished">Workout Finished</string>
+    <string name="exit_workout">Exit workout?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="workout_paused">Workout paused</string>
+    <string name="tap_the_screen_to_resume">Tap the screen to resume</string>
+    <string name="prepare">Prepare&#8230;</string>
+    <string name="zero">0</string>
+
+    <!-- do_workout_activity -->
+    <string name="image">Image</string>
+    <string name="start">Start</string>
+
+    <!-- about_activity -->
+    <string name="about_this_app">About this app</string>
+    <string name="about_text">With help of this app you can easily and quickly perform HIIT training. Choose one of our pre-defined workouts and start exercising.</string>
+
+</resources>

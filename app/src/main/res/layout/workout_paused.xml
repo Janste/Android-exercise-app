@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/button_material_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout paused"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:id="@+id/workout_paused_text_view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="Tap the screen to resume"
+        android:id="@+id/workout_paused_information_text_view"
+        android:layout_below="@+id/workout_paused_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:text="@string/choose_difficulty_level"
+        android:id="@+id/title_text_view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- android:background="@drawable/spinner_bg" -->
+    <!-- android:popupBackground="@color/dark_blue" -->
+
+    <RelativeLayout
+        android:id="@+id/choose_difficulty_spinner_layout"
+        android:layout_below="@+id/title_text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/grey">
+        <Spinner
+            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:popupBackground="@color/light_grey"
+            android:id="@+id/choose_difficulty_level_spinner"
+            />
+    </RelativeLayout>
+    <!--
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:id="@+id/choose_difficulty_level_spinner"
+            android:layout_below="@+id/title_text_view"
+            android:layout_centerHorizontal="true"
+            android:background="@color/grey" />
+    -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/exercise_time"
+            android:id="@+id/workout_time_text_view"
+            android:layout_below="@+id/choose_difficulty_spinner_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/break_time"
+            android:id="@+id/break_time_text_view"
+            android:layout_below="@+id/workout_time_text_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/exercises_per_round"
+            android:id="@+id/exercises_per_round_text_view"
+            android:layout_below="@+id/break_time_text_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/rounds"
+            android:id="@+id/rounds_text_view"
+            android:layout_below="@+id/exercises_per_round_text_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/total_time"
+            android:id="@+id/total_time_text_view"
+            android:layout_below="@+id/rounds_text_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:id="@+id/workout_time"
+            android:layout_alignTop="@+id/workout_time_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:id="@+id/break_time"
+            android:layout_alignTop="@+id/break_time_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:id="@+id/exercises_per_round"
+            android:layout_alignTop="@+id/exercises_per_round_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:id="@+id/rounds"
+            android:layout_alignTop="@+id/rounds_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:id="@+id/total_time"
+            android:layout_alignTop="@+id/total_time_text_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="@string/cancel"
+                android:background="@drawable/begin_workout_normal_button_bg"
+                android:textColor="@color/white"
+                android:onClick="cancelButtonClicked" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:text="@string/ok"
+                android:id="@+id/ok_button"
+                android:background="@drawable/begin_workout_normal_button_bg"
+                android:textColor="@color/white"
+                android:onClick="okButtonClicked" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
